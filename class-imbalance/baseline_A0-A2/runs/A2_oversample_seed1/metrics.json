@@ -1,0 +1,307 @@
+{
+  "arm": "A2_oversample",
+  "seed": 1,
+  "best_epoch": 12,
+  "epochs_run": 15,
+  "val": {
+    "n": 1532,
+    "accuracy": 0.8191906005221932,
+    "balanced_accuracy": 0.6723220170540831,
+    "macro_f1": 0.6915209284934835,
+    "weighted_f1": 0.8267591636372925,
+    "per_class": {
+      "akiec": {
+        "precision": 0.5813953488372093,
+        "recall": 0.4716981132075472,
+        "f1": 0.5208333333333334,
+        "support": 53
+      },
+      "bcc": {
+        "precision": 0.7951807228915663,
+        "recall": 0.8048780487804879,
+        "f1": 0.8,
+        "support": 82
+      },
+      "bkl": {
+        "precision": 0.6192893401015228,
+        "recall": 0.7625,
+        "f1": 0.6834733893557423,
+        "support": 160
+      },
+      "df": {
+        "precision": 0.7692307692307693,
+        "recall": 0.4166666666666667,
+        "f1": 0.5405405405405406,
+        "support": 24
+      },
+      "mel": {
+        "precision": 0.512,
+        "recall": 0.7398843930635838,
+        "f1": 0.6052009456264775,
+        "support": 173
+      },
+      "nv": {
+        "precision": 0.9549356223175965,
+        "recall": 0.8742632612966601,
+        "f1": 0.9128205128205128,
+        "support": 1018
+      },
+      "vasc": {
+        "precision": 1.0,
+        "recall": 0.6363636363636364,
+        "f1": 0.7777777777777778,
+        "support": 22
+      }
+    },
+    "confusion_matrix": [
+      [
+        25,
+        4,
+        17,
+        0,
+        6,
+        1,
+        0
+      ],
+      [
+        5,
+        66,
+        6,
+        0,
+        4,
+        1,
+        0
+      ],
+      [
+        7,
+        2,
+        122,
+        1,
+        17,
+        11,
+        0
+      ],
+      [
+        4,
+        2,
+        0,
+        10,
+        7,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        17,
+        0,
+        128,
+        27,
+        0
+      ],
+      [
+        1,
+        7,
+        35,
+        2,
+        83,
+        890,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        5,
+        1,
+        14
+      ]
+    ],
+    "macro_ovr_auroc": 0.9581412669413197
+  },
+  "test": {
+    "n": 1502,
+    "accuracy": 0.8215712383488681,
+    "balanced_accuracy": 0.7562001383410406,
+    "macro_f1": 0.7549922283065766,
+    "weighted_f1": 0.8293374292074845,
+    "per_class": {
+      "akiec": {
+        "precision": 0.7804878048780488,
+        "recall": 0.6153846153846154,
+        "f1": 0.6881720430107527,
+        "support": 52
+      },
+      "bcc": {
+        "precision": 0.7439024390243902,
+        "recall": 0.8591549295774648,
+        "f1": 0.7973856209150327,
+        "support": 71
+      },
+      "bkl": {
+        "precision": 0.6702702702702703,
+        "recall": 0.7425149700598802,
+        "f1": 0.7045454545454546,
+        "support": 167
+      },
+      "df": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 20
+      },
+      "mel": {
+        "precision": 0.5185185185185185,
+        "recall": 0.7544910179640718,
+        "f1": 0.6146341463414634,
+        "support": 167
+      },
+      "nv": {
+        "precision": 0.9399563318777293,
+        "recall": 0.8575697211155379,
+        "f1": 0.896875,
+        "support": 1004
+      },
+      "vasc": {
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1": 0.8333333333333334,
+        "support": 21
+      }
+    },
+    "confusion_matrix": [
+      [
+        32,
+        3,
+        8,
+        0,
+        7,
+        2,
+        0
+      ],
+      [
+        1,
+        61,
+        3,
+        0,
+        2,
+        4,
+        0
+      ],
+      [
+        3,
+        7,
+        124,
+        2,
+        15,
+        16,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        15,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        9,
+        0,
+        126,
+        30,
+        0
+      ],
+      [
+        2,
+        11,
+        39,
+        3,
+        88,
+        861,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        15
+      ]
+    ],
+    "macro_ovr_auroc": 0.9684502030207691
+  },
+  "test_loss": 0.5900667929617606,
+  "test_bootstrap": {
+    "macro_f1_ci95": [
+      0.7126216347469798,
+      0.7931349236705326
+    ],
+    "balanced_accuracy_ci95": [
+      0.7071250747426406,
+      0.8059500860262772
+    ],
+    "n_resamples": 1000,
+    "n_lesions": 1121
+  },
+  "config": {
+    "IMAGE_ROOT": "/kaggle/input",
+    "MANIFEST_PATH": null,
+    "MANIFEST_NAME": "HAM10000_lesion_split_seed42_v2.csv",
+    "EXPECTED_SHA256": "bda53d198ff403653548b8f072116e78350067417ddf41ec3e342f034bf464d7",
+    "OUT_DIR": "/kaggle/working/baseline_A0-A2",
+    "RESUME_FROM": null,
+    "BACKBONE": "resnet50",
+    "PRETRAINED": true,
+    "RESIZE_SHORT": 256,
+    "IMG_SIZE": 224,
+    "EPOCHS": 15,
+    "PATIENCE": 5,
+    "BATCH_SIZE": 64,
+    "LR": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "AMP": true,
+    "ARMS": [
+      "A0_ce",
+      "A1_weighted_ce",
+      "A2_oversample"
+    ],
+    "TRAIN_SEEDS": [
+      1,
+      2,
+      3
+    ],
+    "N_BOOTSTRAP": 1000,
+    "NUM_WORKERS": 2,
+    "SAVE_CHECKPOINTS": false,
+    "DRY_RUN": false
+  },
+  "env": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "sklearn": "1.6.1",
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "gpu": "Tesla T4"
+  },
+  "manifest_sha256": "bda53d198ff403653548b8f072116e78350067417ddf41ec3e342f034bf464d7",
+  "classes": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "class_weights": null
+}
