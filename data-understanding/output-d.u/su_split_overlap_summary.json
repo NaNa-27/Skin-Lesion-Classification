@@ -1,0 +1,22 @@
+{
+  "metadata": "dataset/HAM10000_metadata.csv",
+  "test_size": 0.2,
+  "seed": 42,
+  "n_train_images": 8012,
+  "n_test_images": 2003,
+  "test_per_class": {
+    "akiec": 65,
+    "bcc": 103,
+    "bkl": 220,
+    "df": 23,
+    "mel": 223,
+    "nv": 1341,
+    "vasc": 28
+  },
+  "matches_han1000_counts": true,
+  "test_lesions": 1880,
+  "test_lesions_shared_with_train": 725,
+  "test_lesions_shared_pct": 38.6,
+  "test_images_exposed": 791,
+  "test_images_exposed_pct": 39.5
+}
