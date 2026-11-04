@@ -1,0 +1,7 @@
+train images 14,805 | HAM10000 images 6,033 | labels {0: 11684, 1: 3121}
+val   images  1,931 | HAM10000 images 1,013 | labels {0: 1707, 1: 224}
+test  images  3,863 | HAM10000 images 2,037 | labels {0: 3467, 1: 396}
+image overlap train/test: 0 | train/val: 0
+HAM10000 lesions: train 4,948 | val 988 | test 1,923
+lesions in both train and test: 568 (29.5% of test lesions) | in both train and val: 273 | in both val and test: 116
+test images with a same-lesion sibling in train: 619 (16.0% of the whole isic19 test) | malignant 75 of 396 | dx {'nv': 396, 'bkl': 108, 'mel': 75, 'vasc': 15, 'akiec': 14, 'df': 11}

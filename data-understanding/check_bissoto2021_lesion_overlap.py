@@ -2,6 +2,8 @@
 Bissoto, Valle & Avila (CVPRW 2021), restricted to the HAM10000 images (the only part of
 ISIC 2019 with public lesion IDs).
 
+Output is plain ASCII, so it can be redirected to a file on any system.
+
 Usage:
     git clone https://github.com/alceubissoto/gan-aug-analysis
     python check_bissoto2021_lesion_overlap.py gan-aug-analysis/splits ISIC2018_Task3_Training_LesionGroupings.csv HAM10000_metadata.csv
@@ -9,7 +11,7 @@ Usage:
 Result on 29/10/2026 (repo commit 0ee27b93):
     image overlap train/test = 0 (image-level split)
     HAM10000 lesions: train 4,948 | val 988 | test 1,923
-    lesion overlap train∩test = 568 (29.5% of HAM test lesions)
+    lesions in both train and test = 568 (29.5% of HAM test lesions)
     619 test images (16.0% of the 3,863-image isic19 test) have a sibling image of the same lesion
     in the train pool, incl. 75 of 396 malignant test images.
 """
@@ -42,8 +44,8 @@ print("image overlap train/test:", len(set(tr["id"]) & set(te["id"])),
 
 L_tr, L_va, L_te = (set(d["lesion"].dropna()) for d in (tr, va, te))
 print(f"HAM10000 lesions: train {len(L_tr):,} | val {len(L_va):,} | test {len(L_te):,}")
-print(f"lesion overlap train∩test {len(L_tr & L_te)} ({len(L_tr & L_te) / len(L_te):.1%} of test lesions) | "
-      f"train∩val {len(L_tr & L_va)} | val∩test {len(L_va & L_te)}")
+print(f"lesions in both train and test: {len(L_tr & L_te)} ({len(L_tr & L_te) / len(L_te):.1%} of test lesions) | "
+      f"in both train and val: {len(L_tr & L_va)} | in both val and test: {len(L_va & L_te)}")
 
 leak = te[te["lesion"].isin(L_tr)]
 print(f"test images with a same-lesion sibling in train: {len(leak)} "
