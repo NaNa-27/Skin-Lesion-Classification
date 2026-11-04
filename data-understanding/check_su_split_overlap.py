@@ -1,10 +1,9 @@
 """Sibling exposure of a random image-level 8:2 split of HAM10000, as used by Su et al. (IEEE Access 2024)
-and by the team's reference replication (notebook HAN1000, prepare_data.py with default options).
-
+and by the team's reference replication (notebook HAN1000)
 The split is re-created exactly as in HAN1000's prepare_data.py (no --split-csv, no --group-by-lesion):
     sklearn.model_selection.train_test_split(metadata in file order, test_size=0.2,
                                              stratify=dx, random_state=42)
-Su et al. do not report their split seed, so this measures OUR seed-42 version of their protocol;
+Su et al. do not report their split seed, so this measures our seed-42 version of their protocol,
 their exact overlap may differ.
 
 Usage:
@@ -14,7 +13,7 @@ Usage:
     su_split_overlap_per_class.csv (the per-class table) to that folder.
 
 Result on 01/11/2026 (pandas 3.0.5, scikit-learn 1.9.1):
-    train 8,012 / test 2,003 images; per-class counts identical to the HAN1000 notebook output
+    train 8,012 / test 2,003 images, per-class counts identical to the HAN1000 notebook output
     test lesions with an image of the same lesion in train: 725 of 1,880 (38.6%)
     test images with a same-lesion image in train:          791 of 2,003 (39.5%)
     (per class, e.g. DF 17 of 23 test images, MEL 154 of 223)
