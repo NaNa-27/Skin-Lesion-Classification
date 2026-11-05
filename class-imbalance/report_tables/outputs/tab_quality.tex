@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Synthetic-image quality along G0 training (snapshot comparison: 200 images per class from fixed latents; FID/FD on 1,532 images matching the class mix of the validation split). P, R, C = precision, recall, coverage (ResNet-50 features, $k=5$), averaged over AKIEC, DF and VASC; Mem.\ = largest per-class near-duplicate rate. $^\ddagger$snapshots compared during selection (1,480 kimg as reference, 2,400 kimg as candidate); $^\dagger$snapshot used for A3 (also a candidate).}
+\label{tab:quality}
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\columnwidth}{!}{\begin{tabular}{lrrcccc}
+\toprule
+kimg & FID & FD$_\mathrm{DINOv2}$ & P & R & C & Mem. \\
+\midrule
+520 & 86.2 & 881 & 0.645 & 0.050 & 0.338 & 0.005 \\
+1,000 & 63.2 & 597 & 0.497 & 0.216 & 0.385 & 0.010 \\
+1,480$^\ddagger$ & 54.0 & 506 & 0.705 & 0.307 & 0.515 & 0.005 \\
+2,400$^\ddagger$ & 45.4 & 493 & 0.790 & 0.248 & 0.640 & 0.005 \\
+3,240 & 31.2 & 345 & 0.855 & 0.367 & 0.763 & 0.005 \\
+3,280 & 32.5 & 339 & 0.855 & 0.404 & 0.782 & 0.000 \\
+3,320$^\dagger$ & 33.1 & 346 & 0.835 & 0.382 & 0.734 & 0.010 \\
+Real val vs.\ real train & 14.1 & 23 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}

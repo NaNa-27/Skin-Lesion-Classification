@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{VASC colour check on the central image region (training images only). Dark: 5th-percentile luminance $<60$; bluish: red$-$blue of the darkest 10\% of pixels $<10$; low contrast (lesion barely visible): median$-$5th-percentile luminance $<25$.}
+\label{tab:vasc}
+\begin{tabular}{lccc}
+\toprule
+Set & Dark & Bluish & Low contrast \\
+\midrule
+Real train (99) & 0.25 & 0.24 & 0.11 \\
+Synthetic 1,480 kimg & 0.07 & 0.11 & 0.18 \\
+Synthetic 3,320 kimg & 0.26 & 0.27 & 0.10 \\
+\bottomrule
+\end{tabular}
+\end{table}

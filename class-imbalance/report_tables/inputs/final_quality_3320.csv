@@ -1,0 +1,9 @@
+metric,fake_mean,fake_std,ref
+FID_inception,34.206,0.75,14.093
+KIDx1000_inception_akiec,28.695,6.76,2.2
+KIDx1000_inception_df,44.822,17.204,15.935
+KIDx1000_inception_vasc,27.184,7.93,8.697
+FID_dinov2,348.48,6.13,23.475
+KIDx1000_dinov2_akiec,35229.872,2823.914,2242.492
+KIDx1000_dinov2_df,43996.502,8014.501,7309.515
+KIDx1000_dinov2_vasc,71984.572,10422.824,9294.597

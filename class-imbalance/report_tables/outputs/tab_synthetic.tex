@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Synthetic set used for A3 (3,320 kimg). Distances: mean $\pm$ SD over 5 independent synthetic sets, next to the real--real reference (real validation vs.\ real train, same sample sizes). AUC: detector separating real (train/val) from unused synthetic AKIEC, DF and VASC images (198 test images); reference column: same detector on the 1,480-kimg set; 0.5 = indistinguishable.}
+\label{tab:synthetic}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{\begin{tabular}{lcc}
+\toprule
+Measure & Synthetic (3,320) & Reference \\
+\midrule
+FID (Inception) & 34.2 $\pm$ 0.8 & 14.1 \\
+FD (DINOv2) & 348.5 $\pm$ 6.1 & 23.5 \\
+KID$\times10^3$ AKIEC & 28.7 $\pm$ 6.8 & 2.2 \\
+KID$\times10^3$ DF & 44.8 $\pm$ 17.2 & 15.9 \\
+KID$\times10^3$ VASC & 27.2 $\pm$ 7.9 & 8.7 \\
+\midrule
+AUC, probe (ResNet-50) & 0.987 & 0.998 (1,480) \\
+AUC, probe (DINOv2) & 0.999 & 1.000 (1,480) \\
+AUC, fine-tuned ResNet-18 & 1.000 & 1.000 (1,480) \\
+\bottomrule
+\end{tabular}}
+\end{table}

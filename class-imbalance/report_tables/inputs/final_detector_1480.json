@@ -1,0 +1,9 @@
+{
+ "AUC_probe_resnet50": 0.998,
+ "AUC_probe_inception": 0.983,
+ "AUC_probe_dinov2": 1.0,
+ "AUC_finetune_resnet18": 1.0,
+ "AUC_finetune_resnet18_akiec": 1.0,
+ "AUC_finetune_resnet18_df": 1.0,
+ "AUC_finetune_resnet18_vasc": 1.0
+}

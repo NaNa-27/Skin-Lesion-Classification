@@ -1,0 +1,492 @@
+{
+  "arm": "A3_gan_topup-synthetic_v2",
+  "base_arm": "A3_gan_topup",
+  "seed": 1,
+  "best_epoch": 11,
+  "epochs_run": 15,
+  "n_train_images": 7373,
+  "train_counts": {
+    "akiec": 444,
+    "bcc": 361,
+    "bkl": 772,
+    "df": 142,
+    "mel": 773,
+    "nv": 4683,
+    "vasc": 198
+  },
+  "val": {
+    "n": 1532,
+    "accuracy": 0.8231070496083551,
+    "balanced_accuracy": 0.6541518904218415,
+    "macro_f1": 0.6784378831522166,
+    "weighted_f1": 0.8264404623060425,
+    "per_class": {
+      "akiec": {
+        "precision": 0.5897435897435898,
+        "recall": 0.4339622641509434,
+        "f1": 0.5,
+        "support": 53
+      },
+      "bcc": {
+        "precision": 0.7662337662337663,
+        "recall": 0.7195121951219512,
+        "f1": 0.7421383647798742,
+        "support": 82
+      },
+      "bkl": {
+        "precision": 0.5564853556485355,
+        "recall": 0.83125,
+        "f1": 0.6666666666666666,
+        "support": 160
+      },
+      "df": {
+        "precision": 0.8333333333333334,
+        "recall": 0.4166666666666667,
+        "f1": 0.5555555555555556,
+        "support": 24
+      },
+      "mel": {
+        "precision": 0.6153846153846154,
+        "recall": 0.6473988439306358,
+        "f1": 0.6309859154929578,
+        "support": 173
+      },
+      "nv": {
+        "precision": 0.9410548086866598,
+        "recall": 0.8939096267190569,
+        "f1": 0.9168765743073047,
+        "support": 1018
+      },
+      "vasc": {
+        "precision": 0.875,
+        "recall": 0.6363636363636364,
+        "f1": 0.7368421052631579,
+        "support": 22
+      }
+    },
+    "confusion_matrix": [
+      [
+        23,
+        2,
+        17,
+        0,
+        7,
+        4,
+        0
+      ],
+      [
+        5,
+        59,
+        12,
+        0,
+        2,
+        3,
+        1
+      ],
+      [
+        6,
+        2,
+        133,
+        1,
+        10,
+        8,
+        0
+      ],
+      [
+        3,
+        2,
+        5,
+        10,
+        3,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0,
+        112,
+        41,
+        1
+      ],
+      [
+        2,
+        10,
+        50,
+        1,
+        45,
+        910,
+        0
+      ],
+      [
+        0,
+        2,
+        3,
+        0,
+        3,
+        0,
+        14
+      ]
+    ],
+    "macro_ovr_auroc": 0.9510936252653405
+  },
+  "test": {
+    "n": 1502,
+    "accuracy": 0.8095872170439414,
+    "balanced_accuracy": 0.7042900484591473,
+    "macro_f1": 0.7281387592104036,
+    "weighted_f1": 0.8143713792192444,
+    "per_class": {
+      "akiec": {
+        "precision": 0.7333333333333333,
+        "recall": 0.6346153846153846,
+        "f1": 0.6804123711340206,
+        "support": 52
+      },
+      "bcc": {
+        "precision": 0.7611940298507462,
+        "recall": 0.7183098591549296,
+        "f1": 0.7391304347826086,
+        "support": 71
+      },
+      "bkl": {
+        "precision": 0.5954545454545455,
+        "recall": 0.7844311377245509,
+        "f1": 0.6770025839793282,
+        "support": 167
+      },
+      "df": {
+        "precision": 0.8666666666666667,
+        "recall": 0.65,
+        "f1": 0.7428571428571429,
+        "support": 20
+      },
+      "mel": {
+        "precision": 0.5027322404371585,
+        "recall": 0.5508982035928144,
+        "f1": 0.5257142857142857,
+        "support": 167
+      },
+      "nv": {
+        "precision": 0.9205851619644723,
+        "recall": 0.8774900398406374,
+        "f1": 0.898521162672106,
+        "support": 1004
+      },
+      "vasc": {
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1": 0.8333333333333334,
+        "support": 21
+      }
+    },
+    "confusion_matrix": [
+      [
+        33,
+        4,
+        11,
+        0,
+        3,
+        1,
+        0
+      ],
+      [
+        2,
+        51,
+        11,
+        1,
+        2,
+        4,
+        0
+      ],
+      [
+        6,
+        3,
+        131,
+        1,
+        7,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        13,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        22,
+        0,
+        92,
+        51,
+        0
+      ],
+      [
+        2,
+        9,
+        40,
+        0,
+        72,
+        881,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        15
+      ]
+    ],
+    "macro_ovr_auroc": 0.9632532207940471
+  },
+  "test_loss": 0.6145184119436617,
+  "test_bootstrap": {
+    "macro_f1_ci95": [
+      0.673119105881585,
+      0.774402896214598
+    ],
+    "balanced_accuracy_ci95": [
+      0.6411342508893616,
+      0.7705867391384221
+    ],
+    "n_resamples": 1000,
+    "n_lesions": 1121
+  },
+  "config": {
+    "IMAGE_ROOT": "/kaggle/input",
+    "MANIFEST_PATH": null,
+    "MANIFEST_NAME": "HAM10000_lesion_split_seed42_v2.csv",
+    "EXPECTED_SHA256": "bda53d198ff403653548b8f072116e78350067417ddf41ec3e342f034bf464d7",
+    "REAL_DIR_NAME": "real_sq256",
+    "IMG_RES": 256,
+    "OUT_DIR": "/kaggle/working/classifier_sq256",
+    "RESUME_FROM": null,
+    "BACKBONE": "resnet50",
+    "PRETRAINED": true,
+    "IMG_SIZE": 224,
+    "EPOCHS": 15,
+    "PATIENCE": 5,
+    "BATCH_SIZE": 64,
+    "LR": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "AMP": true,
+    "ARMS": [
+      "A3_gan_topup"
+    ],
+    "TRAIN_SEEDS": [
+      1,
+      2,
+      3
+    ],
+    "N_BOOTSTRAP": 1000,
+    "NUM_WORKERS": 2,
+    "SAVE_CHECKPOINTS": false,
+    "SYN_VERSION": "synthetic_v2",
+    "SYN_EXPECTED_SNAPSHOT": "network-snapshot-003320.pkl",
+    "SYN_CLASSES": [
+      "akiec",
+      "df",
+      "vasc"
+    ],
+    "SYN_PER_REAL": 1.0,
+    "DRY_RUN": false
+  },
+  "env": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "sklearn": "1.6.1",
+    "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "gpu": "Tesla T4"
+  },
+  "manifest_sha256": "bda53d198ff403653548b8f072116e78350067417ddf41ec3e342f034bf464d7",
+  "classes": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "image_source": {
+    "real_dir": "/kaggle/input/notebooks/kietvgpham/01-prepare-gan-data/real_sq256",
+    "prep_info": {
+      "created": "2026-10-19 10:32:06",
+      "split_manifest": "HAM10000_lesion_split_seed42_v2.csv",
+      "split_manifest_sha256": "5d9d87934b2a8368eb23ef68254edecb87ab31230cdc8b0273d3eb8221354273",
+      "res": 256,
+      "crop": "center_square",
+      "resample": "LANCZOS",
+      "format": "PNG",
+      "classes": [
+        "akiec",
+        "bcc",
+        "bkl",
+        "df",
+        "mel",
+        "nv",
+        "vasc"
+      ],
+      "n_real_sq_images": 10015,
+      "n_gan_train_images": 6981,
+      "gan_train_counts": {
+        "nv": 4683,
+        "mel": 773,
+        "bkl": 772,
+        "bcc": 361,
+        "akiec": 222,
+        "vasc": 99,
+        "df": 71
+      },
+      "gan_train_zip_sha256": "488306f8cee3a96de0f888049990778ab7a915dfd93433521180d19a565aa6df"
+    }
+  },
+  "synthetic": {
+    "version": "synthetic_v2",
+    "generator_info": {
+      "version": "synthetic_v2",
+      "created": "2026-10-31 15:42:57",
+      "generator_snapshot": "network-snapshot-003320.pkl",
+      "generator_snapshot_sha256": "51ce7411a90f534f492f313521774e1cc5f548f5bf5e3b768a31dc264ecd7407",
+      "generator_total_kimg": 3320,
+      "truncation": 1.0,
+      "seed_base": 0,
+      "split_manifest_sha256": "5d9d87934b2a8368eb23ef68254edecb87ab31230cdc8b0273d3eb8221354273",
+      "gan_train_zip_sha256": "488306f8cee3a96de0f888049990778ab7a915dfd93433521180d19a565aa6df",
+      "res": 256,
+      "minority_classes": [
+        "akiec",
+        "df",
+        "vasc"
+      ],
+      "pool": {
+        "mult": 3,
+        "min": 500,
+        "extra": 1.2
+      },
+      "feature_extractor": "torchvision resnet50 IMAGENET1K_V2 (penultimate, L2-normalised)",
+      "memorization_rule": "nn_sim > p99 of real-real NN sim between different lesions (same class)",
+      "memorization_thresholds": {
+        "akiec": 0.9412,
+        "df": 0.9202,
+        "vasc": 0.9456
+      },
+      "prdc_k": 5,
+      "prdc": {
+        "akiec": {
+          "precision": 0.8262,
+          "recall": 0.2658,
+          "density": 0.698,
+          "coverage": 0.7748
+        },
+        "df": {
+          "precision": 0.9067,
+          "recall": 0.2113,
+          "density": 0.8047,
+          "coverage": 0.9718
+        },
+        "vasc": {
+          "precision": 0.8017,
+          "recall": 0.2929,
+          "density": 0.6563,
+          "coverage": 0.899
+        }
+      },
+      "quality": {
+        "feature_extractors": [
+          "inception",
+          "dinov2"
+        ],
+        "n_boot": 5,
+        "kid_subsets": 100,
+        "fake_mean_std": {
+          "FID_inception": [
+            34.2059,
+            0.7495
+          ],
+          "KIDx1000_inception_akiec": [
+            28.6947,
+            6.7595
+          ],
+          "KIDx1000_inception_df": [
+            44.8217,
+            17.204
+          ],
+          "KIDx1000_inception_vasc": [
+            27.1844,
+            7.9298
+          ],
+          "FID_dinov2": [
+            348.4799,
+            6.1296
+          ],
+          "KIDx1000_dinov2_akiec": [
+            35229.8722,
+            2823.9142
+          ],
+          "KIDx1000_dinov2_df": [
+            43996.5021,
+            8014.5008
+          ],
+          "KIDx1000_dinov2_vasc": [
+            71984.5719,
+            10422.8236
+          ]
+        },
+        "reference_real_val_vs_train": {
+          "FID_inception": 14.093,
+          "KIDx1000_inception_akiec": 2.1997,
+          "KIDx1000_inception_df": 15.9346,
+          "KIDx1000_inception_vasc": 8.6967,
+          "FID_dinov2": 23.4751,
+          "KIDx1000_dinov2_akiec": 2242.4919,
+          "KIDx1000_dinov2_df": 7309.5149,
+          "KIDx1000_dinov2_vasc": 9294.5972
+        },
+        "detector_auc": {
+          "AUC_probe_resnet50": 0.9873,
+          "AUC_probe_inception": 0.9772,
+          "AUC_probe_dinov2": 0.9987,
+          "AUC_finetune_resnet18": 1.0,
+          "AUC_finetune_resnet18_akiec": 1.0,
+          "AUC_finetune_resnet18_df": 1.0,
+          "AUC_finetune_resnet18_vasc": 1.0
+        },
+        "note": "FID/KID d\u00f9ng feature torchvision; ch\u1ec9 so s\u00e1nh n\u1ed9i b\u1ed9. Real val ch\u1ec9 l\u00e0m m\u1ed1c, kh\u00f4ng d\u00f9ng test."
+      },
+      "counts": {
+        "akiec": {
+          "total": 800,
+          "flagged": 6
+        },
+        "df": {
+          "total": 600,
+          "flagged": 1
+        },
+        "vasc": {
+          "total": 600,
+          "flagged": 0
+        }
+      }
+    },
+    "n_used": {
+      "akiec": 222,
+      "vasc": 99,
+      "df": 71
+    }
+  },
+  "class_weights": null
+}
