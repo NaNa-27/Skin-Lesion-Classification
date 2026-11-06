@@ -1,7 +1,22 @@
-/dataset/ISIC2018_Task3_Test_Input
-/dataset/ISIC2018_Task3_Training_Input
-/dataset/ISIC2018_Task3_Validation_Input
-/dataset/ISIC2018_Task3_Validation_GroundTruth
-/data-understanding/gan-aug-analysis
-/dataset/bonus
-/dataset/ISIC2018_Task3_Test_GroundTruth
+# HAM10000 images (download from ISIC / Harvard Dataverse, see README)
+dataset/ISIC2018_Task3_*_Input/
+
+# dataset files not used in this study
+dataset/ISIC2018_Task3_Validation_GroundTruth/
+dataset/ISIC2018_Task3_Test_GroundTruth/
+dataset/bonus/
+
+# large files produced on Kaggle
+**/real_sq256/
+**/synthetic_v*/images/
+*.zip
+*.pkl
+gan/training_logs/**/fakes*.png
+gan/training_logs/**/reals*.png
+
+# external repo, cloned only to run a script
+data-understanding/gan-aug-analysis/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
