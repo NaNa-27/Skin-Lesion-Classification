@@ -1,0 +1,30 @@
+{
+  "created": "2026-10-19 10:32:06",
+  "split_manifest": "HAM10000_lesion_split_seed42_v2.csv",
+  "split_manifest_sha256": "5d9d87934b2a8368eb23ef68254edecb87ab31230cdc8b0273d3eb8221354273",
+  "res": 256,
+  "crop": "center_square",
+  "resample": "LANCZOS",
+  "format": "PNG",
+  "classes": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "n_real_sq_images": 10015,
+  "n_gan_train_images": 6981,
+  "gan_train_counts": {
+    "nv": 4683,
+    "mel": 773,
+    "bkl": 772,
+    "bcc": 361,
+    "akiec": 222,
+    "vasc": 99,
+    "df": 71
+  },
+  "gan_train_zip_sha256": "488306f8cee3a96de0f888049990778ab7a915dfd93433521180d19a565aa6df"
+}

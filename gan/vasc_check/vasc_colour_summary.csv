@@ -1,0 +1,4 @@
+set,n,p05_lum_median,frac_dark_lt60,frac_dark_lt90,red_minus_blue_median,frac_blueish,frac_low_contrast_lt25
+real_train,99,81.56,0.253,0.626,44.401,0.242,0.111
+syn_1480,200,94.386,0.07,0.42,64.26,0.11,0.185
+syn_3320,200,78.676,0.255,0.675,37.699,0.27,0.1

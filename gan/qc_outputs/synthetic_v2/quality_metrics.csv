@@ -1,0 +1,16 @@
+metric,fake_mean,fake_std,ref_real_val_vs_train,ratio_to_ref
+FID_inception,34.206,0.75,14.093,2.43
+KIDx1000_inception_akiec,28.695,6.76,2.2,13.04
+KIDx1000_inception_df,44.822,17.204,15.935,2.81
+KIDx1000_inception_vasc,27.184,7.93,8.697,3.13
+FID_dinov2,348.48,6.13,23.475,14.84
+KIDx1000_dinov2_akiec,35229.872,2823.914,2242.492,15.71
+KIDx1000_dinov2_df,43996.502,8014.501,7309.515,6.02
+KIDx1000_dinov2_vasc,71984.572,10422.824,9294.597,7.74
+AUC_probe_resnet50,0.987,,,
+AUC_probe_inception,0.977,,,
+AUC_probe_dinov2,0.999,,,
+AUC_finetune_resnet18,1.0,,,
+AUC_finetune_resnet18_akiec,1.0,,,
+AUC_finetune_resnet18_df,1.0,,,
+AUC_finetune_resnet18_vasc,1.0,,,

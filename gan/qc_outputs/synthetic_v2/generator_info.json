@@ -1,0 +1,126 @@
+{
+  "version": "synthetic_v2",
+  "created": "2026-10-31 15:42:57",
+  "generator_snapshot": "network-snapshot-003320.pkl",
+  "generator_snapshot_sha256": "51ce7411a90f534f492f313521774e1cc5f548f5bf5e3b768a31dc264ecd7407",
+  "generator_total_kimg": 3320,
+  "truncation": 1.0,
+  "seed_base": 0,
+  "split_manifest_sha256": "5d9d87934b2a8368eb23ef68254edecb87ab31230cdc8b0273d3eb8221354273",
+  "gan_train_zip_sha256": "488306f8cee3a96de0f888049990778ab7a915dfd93433521180d19a565aa6df",
+  "res": 256,
+  "minority_classes": [
+    "akiec",
+    "df",
+    "vasc"
+  ],
+  "pool": {
+    "mult": 3,
+    "min": 500,
+    "extra": 1.2
+  },
+  "feature_extractor": "torchvision resnet50 IMAGENET1K_V2 (penultimate, L2-normalised)",
+  "memorization_rule": "nn_sim > p99 of real-real NN sim between different lesions (same class)",
+  "memorization_thresholds": {
+    "akiec": 0.9412,
+    "df": 0.9202,
+    "vasc": 0.9456
+  },
+  "prdc_k": 5,
+  "prdc": {
+    "akiec": {
+      "precision": 0.8262,
+      "recall": 0.2658,
+      "density": 0.698,
+      "coverage": 0.7748
+    },
+    "df": {
+      "precision": 0.9067,
+      "recall": 0.2113,
+      "density": 0.8047,
+      "coverage": 0.9718
+    },
+    "vasc": {
+      "precision": 0.8017,
+      "recall": 0.2929,
+      "density": 0.6563,
+      "coverage": 0.899
+    }
+  },
+  "quality": {
+    "feature_extractors": [
+      "inception",
+      "dinov2"
+    ],
+    "n_boot": 5,
+    "kid_subsets": 100,
+    "fake_mean_std": {
+      "FID_inception": [
+        34.2059,
+        0.7495
+      ],
+      "KIDx1000_inception_akiec": [
+        28.6947,
+        6.7595
+      ],
+      "KIDx1000_inception_df": [
+        44.8217,
+        17.204
+      ],
+      "KIDx1000_inception_vasc": [
+        27.1844,
+        7.9298
+      ],
+      "FID_dinov2": [
+        348.4799,
+        6.1296
+      ],
+      "KIDx1000_dinov2_akiec": [
+        35229.8722,
+        2823.9142
+      ],
+      "KIDx1000_dinov2_df": [
+        43996.5021,
+        8014.5008
+      ],
+      "KIDx1000_dinov2_vasc": [
+        71984.5719,
+        10422.8236
+      ]
+    },
+    "reference_real_val_vs_train": {
+      "FID_inception": 14.093,
+      "KIDx1000_inception_akiec": 2.1997,
+      "KIDx1000_inception_df": 15.9346,
+      "KIDx1000_inception_vasc": 8.6967,
+      "FID_dinov2": 23.4751,
+      "KIDx1000_dinov2_akiec": 2242.4919,
+      "KIDx1000_dinov2_df": 7309.5149,
+      "KIDx1000_dinov2_vasc": 9294.5972
+    },
+    "detector_auc": {
+      "AUC_probe_resnet50": 0.9873,
+      "AUC_probe_inception": 0.9772,
+      "AUC_probe_dinov2": 0.9987,
+      "AUC_finetune_resnet18": 1.0,
+      "AUC_finetune_resnet18_akiec": 1.0,
+      "AUC_finetune_resnet18_df": 1.0,
+      "AUC_finetune_resnet18_vasc": 1.0
+    },
+    "note": "FID/KID d\u00f9ng feature torchvision; ch\u1ec9 so s\u00e1nh n\u1ed9i b\u1ed9. Real val ch\u1ec9 l\u00e0m m\u1ed1c, kh\u00f4ng d\u00f9ng test."
+  },
+  "counts": {
+    "akiec": {
+      "total": 800,
+      "flagged": 6
+    },
+    "df": {
+      "total": 600,
+      "flagged": 1
+    },
+    "vasc": {
+      "total": 600,
+      "flagged": 0
+    }
+  }
+}
